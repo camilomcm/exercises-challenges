@@ -1,7 +1,6 @@
 # Solutions to excersises and challenges
 
-## freeCodeCamp
-[Use class Syntax to Define a Constructor Function](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/use-class-syntax-to-define-a-constructor-function)
+**freeCodeCamp** [Use class Syntax to Define a Constructor Function](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/use-class-syntax-to-define-a-constructor-function)
 
 ```js
 // Only change code below this line

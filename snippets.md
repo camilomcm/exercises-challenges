@@ -1,5 +1,36 @@
 # Solutions to excersises and challenges
 
+**freeCodeCamp** - [Profile Lookup](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/profile-lookup)
+
+```js
+//This solution doesn't work
+function lookUpProfile(name, prop) {
+  for(let i = 0; i < contacts.length; i++) {
+    if(contacts[i].firstName === name && contacts[i].hasOwnProperty(prop)) {
+       return contacts[i][prop];   
+    } else if(contacts[i].firstName !== name) {
+      return 'No such contact';
+    } else if(!contacts[i].hasOwnProperty(prop)) {
+      return 'No such property';
+    }
+  }
+}
+
+//This solution works
+function lookUpProfile(name, prop) {
+  for(let i = 0; i < contacts.length; i++) {
+    if(contacts[i].firstName === name) {
+      if(contacts[i].hasOwnProperty(prop)) {
+        return contacts[i][prop];
+      } else {
+        return 'No such property'; 
+      }   
+    }  
+  }
+  return 'No such contact';
+}
+```
+---
 **freeCodeCamp** - [Use class Syntax to Define a Constructor Function](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/es6/use-class-syntax-to-define-a-constructor-function)
 
 ```js

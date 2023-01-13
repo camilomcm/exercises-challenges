@@ -82,3 +82,11 @@ let username = "JackOfAllTrades";
 let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
 let result = userCheck.test(username);
 ```
+---
+**freeCodeCamp** - [Check For Mixed Grouping of Characters](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/regular-expressions/check-for-mixed-grouping-of-characters)
+
+```js
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Franklin|Eleanor)\s\D+o{2}\D+/i; 
+let result = myRegex.test(myString);
+```

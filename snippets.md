@@ -118,3 +118,18 @@ function testFirstLetter(word) {
   }
 };
 ```
+## 2.
+```js
+function cardNumber(number) {
+  let regEx = /^\d{4}\s\d{4}\s\d{4}\s\d{4}$/; // Standard format → 1234 5678 9123 4567
+  if(number !== '') {
+    if(regEx.test(number)) {
+      console.log('Valid credit card number');
+    } else {
+      console.log('Invalid credit card number');
+    } 
+  } else {
+    console.log('There is no number');
+  }
+};
+```

@@ -100,3 +100,20 @@ let result = hello.replace(wsRegex,'');
 console.log(hello.match(wsRegex));
 console.log(result);
 ```
+---
+**JS regular expressions: exercises and practice** - [](https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php)
+**1.**
+```js
+function testFirstLetter(word) {
+  let regEx = /^[A-Z]/;
+  if(word !== '') {
+    if(regEx.test(word)) {
+      console.log('First letter is uppercase');
+    } else {
+      console.log('First letter isn\'t uppercase');
+    } 
+  } else {
+    console.log('There is no word');
+  }
+};
+```

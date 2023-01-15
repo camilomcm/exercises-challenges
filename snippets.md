@@ -90,3 +90,13 @@ let myString = "Eleanor Roosevelt";
 let myRegex = /(Franklin|Eleanor)\s\D+o{2}\D+/i; 
 let result = myRegex.test(myString);
 ```
+---
+**freeCodeCamp** - [Remove Whitespace from Start and End](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/regular-expressions/remove-whitespace-from-start-and-end)
+
+```js
+let hello = "   Hello, World!  ";
+let wsRegex = /^(\s+)|(\s+)$/g;
+let result = hello.replace(wsRegex,''); 
+console.log(hello.match(wsRegex));
+console.log(result);
+```

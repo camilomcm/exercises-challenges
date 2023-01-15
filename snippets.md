@@ -102,7 +102,8 @@ console.log(result);
 ```
 ---
 **JS regular expressions: exercises and practice** - [](https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php)
-**1.**
+
+## 1.
 ```js
 function testFirstLetter(word) {
   let regEx = /^[A-Z]/;

@@ -101,7 +101,7 @@ console.log(hello.match(wsRegex));
 console.log(result);
 ```
 ---
-**JS regular expressions: exercises and practice** - [](https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php)
+[**JS regular expressions: exercises and practice**](https://www.w3resource.com/javascript-exercises/javascript-regexp-exercises.php)
 
 ## 1.
 ```js

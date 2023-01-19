@@ -133,3 +133,39 @@ function cardNumber(number) {
   }
 };
 ```
+---
+**LeetCode** - [Two Sum](https://leetcode.com/problems/two-sum/)
+
+```js
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+var twoSum = function(nums, target) {
+    let resultArr = [];
+    var result = nums.reduce( 
+    (acc, v, i) => acc.concat(
+        nums.slice(i+1).map( w => [v,w])),
+    []);
+    
+    for(let i = 0; i < result.length; i++) {
+        if(result[i].reduce((a,b) => a+b) === target) {
+            let [c,d] = result[i];
+            if(c === d) {
+                c = nums.indexOf(c); 
+                d = nums.indexOf(d)+1;    
+            } else {
+                c = nums.indexOf(c); 
+                d = nums.indexOf(d);
+            }
+            resultArr.push(c);
+            resultArr.push(d);
+            return resultArr;  
+        };
+    };   
+};
+
+twoSum([1],7);
+```
+---

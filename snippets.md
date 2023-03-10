@@ -169,3 +169,12 @@ var twoSum = function(nums, target) {
 twoSum([1],7);
 ```
 ---
+**freeCodeCamp** - [Spinal Tap Case](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/spinal-tap-case)
+
+```js
+function spinalCase(str) {
+  return(str.split(/(?=[A-Z])|[\W_]/).join('-').toLowerCase())
+}
+
+spinalCase('thisIsSpinalTap');
+```

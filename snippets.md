@@ -178,3 +178,18 @@ function spinalCase(str) {
 
 spinalCase('thisIsSpinalTap');
 ```
+---
+**freeCodeCamp** - [Pig Latin](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/pig-latin)
+
+```js
+function translatePigLatin(str) {
+  if(str.match(/^[^aeiou]+/)) {
+    const consonantCluster = str.match(/^[^aeiou]+/)[0];
+    return str.slice(consonantCluster.length)+consonantCluster+'ay';
+  } else if(str.match(/^[aeiou]+/i)) {
+    return str+'way';
+  }
+}
+
+translatePigLatin("consonant");
+```

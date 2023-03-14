@@ -209,3 +209,46 @@ function sumFibs(num) {
 
 sumFibs(1000);
 ```
+---
+**freeCodeCamp** - [Sum All Odd Fibonacci Numbers](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/sum-all-odd-fibonacci-numbers)
+
+```js
+function sumFibs(num) {
+  const sol = [0,1];
+  for(let i = 2;i <= num;i++) {
+     sol[i] = sol[i-1] + sol[i-2]; 
+  }
+
+  let list = sol.filter(x => x <= num && x % 2 !== 0);
+  return list.reduce((x,acc) => x + acc,0);
+}
+
+sumFibs(1000);
+```
+---
+**freeCodeCamp** - [Sum All Odd Fibonacci Numbers](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/sum-all-odd-fibonacci-numbers)
+
+```js
+function smallestCommons(arr) {
+  let max = Math.max(...arr);
+  let min = Math.min(...arr);
+  let range = [];
+  for(min;min <= max;min++) {
+    range.push(min);
+  }
+  
+  const lowestCommon = currentValue => n%currentValue === 0;
+  let common = false;
+  let n = max * (max-1);
+
+  common = range.every(lowestCommon);
+
+  while(common === false) {
+    n++;
+    common = range.every(lowestCommon);
+  }
+  return n
+}
+
+smallestCommons([1,5]);
+```

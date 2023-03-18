@@ -252,3 +252,15 @@ function smallestCommons(arr) {
 
 smallestCommons([1,5]);
 ```
+---
+**freeCodeCamp** - [Steamroller](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/steamroller)
+
+```js
+function steamrollArray(arr) {
+  let temp = arr.toString().split(',');
+  let result = temp.filter(x => x !== '').map(x => x === '[object Object]' ? {} : x).map(x => !Number(x) ? x : Number(x));
+  return (result);
+}
+
+steamrollArray([[["a"]], [["b"]]]);
+```

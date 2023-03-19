@@ -264,3 +264,31 @@ function steamrollArray(arr) {
 
 steamrollArray([[["a"]], [["b"]]]);
 ```
+---
+**freeCodeCamp** - [Arguments Optional](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/arguments-optional)
+
+```js
+function addTogether(...args) {
+  if(arguments.length === 1) {
+    if(typeof args[0] === 'number') {
+      return function(arg2) {
+        if(typeof arg2 === 'number') {
+          return args[0]+arg2;
+        } else {
+          return undefined;
+        }
+      }
+    } else {
+      return undefined;
+    } 
+  }
+  if(arguments.length === 2) {
+    if(typeof arguments[0] !== 'number' || typeof arguments[1] !== 'number') {
+      return undefined;
+    }
+    return args.reduce((x,acc) => x+acc,0)
+  } 
+  
+}
+addTogether(5,7);
+```

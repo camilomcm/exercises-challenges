@@ -292,3 +292,48 @@ function addTogether(...args) {
 }
 addTogether(5,7);
 ```
+---
+**freeCodeCamp** - [Make a person](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/make-a-person)
+
+```js
+const Person = function(firstAndLast) {
+  // Only change code below this line
+  // Complete the method below and implement the others similarly
+  
+  this.getFirstName = function() {
+    return this.first === undefined ? firstAndLast.split(' ')[0] : this.first;
+  };
+  this.getLastName = function() {
+    return this.last === undefined ? firstAndLast.split(' ')[1] : this.last;
+  };
+  this.getFullName = function() {
+    return `${this.getFirstName()} ${this.getLastName()}`;
+  };
+
+  this.setFirstName = function(first) {
+    this.first = first;
+  };
+ 
+  this.setLastName = function(last) {
+    this.last = last;
+  };
+  this.setFullName = function(fullName) {
+    this.first = fullName.split(' ')[0];
+    this.last = fullName.split(' ')[1];
+  };
+};
+
+const bob = new Person('Bob Ross');
+console.log(bob.getFullName());
+
+// console.log(bob.getLastName());
+// console.log(bob.getFullName());
+// bob.setFirstName('Haskell');
+// console.log(bob.getFullName());
+// bob.setLastName('Curry');
+// console.log(bob.getFullName());
+// bob.setFullName('Camilo Martinez');
+// console.log(bob.getFullName());
+// console.log(bob.getFirstName());
+// console.log(bob.getLastName());
+```
